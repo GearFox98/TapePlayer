@@ -45,7 +45,7 @@ TapePlayer::TapePlayer(QWidget *parent)
             }
         } else if (stat == QMediaPlayer::NoMedia && !isClosing) {
             ui->btPlay->setChecked(false);
-            ui->btPlay->setIcon(QIcon(":/assets/icon.png"));
+            ui->btPlay->setIcon(QIcon::fromTheme(tr("media-playback-start")));
             ui->seeker->setEnabled(false);
             ui->seeker->setValue(0);
         }
